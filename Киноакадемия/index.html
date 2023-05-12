@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Киноакадемия</title>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ 
+
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="header_container">
+      <div class="header_nav">
+        <img src="img/лого.png" alt="logo" class="logo" />
+        <ul class="header_menu">
+          <li>
+            <a href="#header">Главная</a>
+          </li>
+          <li>
+            <a href="#about">О нас</a>
+          </li>
+          <li>
+            <a href="#price">Прайс</a>
+          </li>
+          <li>
+            <a href="#contact">Контакты</a>
+          </li>
+          <li>
+            <a href="#rules">Правила</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img\1v.jpg"></div>
+          <div class="swiper-slide"><img src="img\2v.jpg"></div>
+          <div class="swiper-slide"><img src="img\3v.jpg"></div>
+          <div class="swiper-slide"><img src="img\4v.jpg"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="container">
+        <script src="main.js"></script>
+   
+
+
+        <div class="header_offer">
+          <div class="header_title title">Киноакадемия</div>
+          <a href="#header_popup" class="header_button">Забронировать зал</a>
+          <div id="header_popup" class="header_popup">
+            <div class="popup-header_dialog">
+              <div class="popup-header_content">
+                <div class="popup-header_header">
+                  <div class="popup-header_title">
+                    Оставьте заявку, мы перезвоним!
+                  </div>
+                  <a href="#close" title="Close" class="popup-header_close">×</a>
+                </div>
+                <div class="popup-header_body">
+                  <div class="popup-header_inputBox">
+                    <input type="name" placeholder="Имя" />
+                  </div>
+                  <div class="popup-header_inputBox">
+                    <input type="tel" placeholder="+7 (___) ___ __ __" />
+                  </div>
+                  <a href="#exit" title="send" class="popup-header_exit">Отправить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+  <section id="about" class="about">
+    <div class="about_container">
+      <div class="about_title">О нас</div>
+      <div class="about_info">
+          Наша компания подготовила для вас уютные отдельные залы с почасовой оплатой, в которых можно провести
+          встречу, работать в тихой обстановке, устроить просмотр фильма, сразиться в приставку PS4, покурить кальян и
+          послушать любимую музыку.
+          Всего от 200 руб до 250 руб/час с человека.
+          <br>Отмечай свой День Рождения в АнтиКинотеатре "Киноакадемия" и получи скидку равную твоему возрасту!
+      </div>
+      <div class="about_info_image">
+        <img src="img/приставка.jpg" alt="Фотография 1" class="round" >
+        <img src="img/настолка.jpg" alt="Фотография 2" class="round">
+        <img src="img/кушац.jpg" alt="Фотография 3" class="round">
+        <img src="img/романтик.jpg" alt="Фотография 4" class="round">
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="price" class="price">
+    <div class="price_container border">
+      <div class="price_title">Прайс</div>
+      <!-- <img src="img/фон2кальян.jpg" class="background" /> -->
+      <div class="price_info">
+        Работаем каждый будний день с 16:00<br>
+        Каждый выходной день с 14:00<br>
+        Стоимость посещения "Киноакадемии"<br>
+        С пн по чт: <br>
+
+        200 руб/час с человека<br>
+
+        С пятницы по воскресенье ( в т.ч. предпраздничные и праздничные дни )<br>
+
+
+        до 22:00 - 200 руб/час с человека<br>
+        после 22:00 - 250 руб/час с человека <br>
+
+        Чай: 500 руб. чайник<br>
+        Coca cola ( 0.33 мл ж/б) - 150 руб <br>
+        Fanta/Chupa Chups (0.375мл ж/б) - 150 руб<br>
+        Паровой коктейль - 800/1000руб <br>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <div class="contact_container">
+      <div class="contact_title">Контакты</div>
+      
+ 
+      
+      <div class="contact_info">
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.533902%2C55.540983&mode=routes&rtext=55.542861%2C37.532493~55.539088%2C37.535270&rtt=pd&ruri=ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstop__9648967~ymapsbm1%3A%2F%2Forg%3Foid%3D1762361562&utm_medium=mapframe&utm_source=maps&z=17.21" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.533902%2C55.540983&mode=routes&rtext=55.542861%2C37.532493~55.539088%2C37.535270&rtt=pd&ruri=ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstop__9648967~ymapsbm1%3A%2F%2Forg%3Foid%3D1762361562&z=17.21" width="860" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <div class="contact_info border2">
+        Режим Работы:<br>
+        С пн по чт: 16:00 - 00:00<br>
+        В пятницу( в предпраздничные дни) : 16:00 - 02:00<br>
+        В сб и вс ( и в праздничные дни ): 14:00 - 02:00<br>
+        
+        Контакты<br>
+
+        +7(495)773-28-24<br>
+        г. Москва ул. Южнобутовская д. 44
+      </div>
+      <div class="info_contact_mess">
+        <a href="https://instagram.com/kinoakademya?igshid=YmMyMTA2M2Y="><img class="insta" src="img/insta.png"/></a>
+        <a href="@v_marii"><img class="telega" src="img/telega.png"/></a>
+        <a href="https://vk.com/kinoakademya"><img class="vk" src="img/vk.png"/></a>
+      </div>
+    </div>
+        
+    </div>
+  </section>
+
+
+
+
+
+  <section id="rules" class="rules">
+    <div class="rules_container">
+      <div class="rules_title">Правила посещения</div>
+      <div class="line"></div>
+      <div class="rules_info">
+        <br>1. Несовершеннолетним запрещается нахождение в "Киноакадемии" после 23.00 без сопровождения взрослых.
+        <br>2. У нас не курят. Штраф за курение в помещении – 1500р
+        <br>3. Вы можете приносить свои напитки. (Если приносите крепкие алкогольные напитки, при себе ОБЯЗАТЕЛЬНО иметь
+        чек,<br> подтверждающий покупку данного напитка в магазине)
+        <br>4. Вы можете принести свой фильм в формате «MKV» на любом носителе.
+        <br>5. Минимальный срок аренды комнаты - один час. Первый час аренды тарифицируются по часу, далее - каждые
+        полчаса.
+        <br>6. Обязательно предварительное бронирование.
+        <br>7. Вы несете полную материальную ответственность в случае порчи имущества в зале.
+        <br>8. В оплаченное время входят 10 минут на обслуживание зала.
+        <br>9. В случае если после Вас есть свободное время, и Вы не покинули зал в забронированный час,
+        время бронирования<br> считается автоматически продленным.
+        <br>10. Для подтверждения бронирования необходимо в день бронирования внести предоплату по 100руб с человека.
+        <br>10.1. Возврат предоплаты может быть осуществлен не позднее, чем за 48 часов до начала времени аренды зала.
+        <br>11. Администрация может отказать в оказании услуг лицам, находящимся в состоянии алкогольного или
+        наркотического<br>опьянения, лицам с неадекватным поведением.
+        <br>12. Нарушение правил может привести к выдворению гостей и отказу им в предоставлении услуг в дальнейшем.
+        <br>При этом оплаченное время аренды зала не возмещается. При злостном нарушении правил и неподчинение
+        администратору,<br> тот вправе вызвать полицию.
+
+        Оплачивая услуги, гость подтверждает своё согласие с перечисленными правилами и обязуется соблюдать их.
+        
+      </div>
+      <div class="linesecond"></div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer__info">89778947206 Maria Velikotskaya</div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="index.js?v=1"></script>
+  <script src="menu.js?v=1"></script>
+  <script src="modal-open.js"></script>
+
+
+</body>
+
+</html>
